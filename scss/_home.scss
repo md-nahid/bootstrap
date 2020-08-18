@@ -1,0 +1,168 @@
+
+// home page banner section
+.banner {
+    background-image: url(../images/ballon.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .banner-hero-text {
+        h3 {
+            font-style: italic;
+        }
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 80vh;
+    }
+}
+// home page banner section
+
+
+// home page upcoming events section
+.upcomingevents {
+    padding-top: 100px;
+    h3 {
+        font-weight: 700;
+    }
+    .container {
+        display: flex;
+        .event {
+            margin: 0 30px;
+            .card {
+                border: none;
+                .card-img-top {
+                    box-shadow: 4px 4px 8px rgba(192, 179, 179, 0.644);
+                }
+                .card-body {
+                    .card-text{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upcomingevents {
+        .container {
+            display: flex;
+            flex-direction: column;
+            .event {
+                margin: 15px 0;
+            }
+        }
+    }
+}
+// home page upcoming events section
+
+
+// explore the world section
+.exploretheworld {
+    background-image: url(../images/mountainriver.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 70px;
+    .container {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        div {
+            .underlinetext {
+                font-size: 80px;
+                &::after {
+                    left: 0%;
+                    transform: translateX(0%);
+                }
+            }
+            p {
+                font-size: 18px;
+            }
+            .text-white {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .exploretheworld {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .exploretheworld {
+        .container {
+            div {
+                .underlinetext {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+// explore the world section
+
+
+
+// tours section
+.tours {
+    .container {
+        .row {
+            .tours-photo-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                .tours-hero-text {
+                    .underlinetext {
+                        &::after {
+                            left: 0%;
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+                .tours {
+                    img {
+                        border-radius: 5px;
+                        box-shadow: 2px 2px 6px rgba(165, 160, 160, 0.801);
+                    }
+                    .small {
+                        object-fit: cover;
+                    }
+                    .large {
+                        object-fit: cover;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tours {
+        .container {
+            .row {
+                .tours-photo-column {
+                    &:first-child {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+// tours section
