@@ -1,8 +1,4 @@
 
-// working-process transition
-.working-porcess {
-    transition: 0.5s;
-}
 .happy-clints {
     background-image: url("../images/ballon.jpg");
     background-position: center;
@@ -18,9 +14,15 @@
     }
 }
 
-// testimonial card style
+// testimonial card section style start
+.client-testimonial-wrapper {
+    background-image: url("../images/clientimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .testimonial-card {
-    background-image: linear-gradient(to right, #6562f8 , #6cbbf8);
+    background-image: linear-gradient(to right, #3f3ce0 , #6cbbf8);
     p {
         &:first-child {
             font-size: 14px;
@@ -28,7 +30,6 @@
     }
 }
 
-// testimonial client image
 .testimonial-client-img {
     width: 100px;
     height: 100px;
@@ -45,7 +46,6 @@
     }
 }
 
-
 @media screen and (max-width: 990px) {
     .aboutus-main-text {
         margin-top: 25px;
@@ -57,3 +57,29 @@
         }
     }
 }
+// testimonial card section style end
+
+
+
+// our advantages section style start
+.advantages-icon {
+    font-size: 40px;
+    color: #ad146a;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 0 20px 0 rgba(100, 103, 121, 0.21);
+    &:hover {
+        box-shadow: 2px 0 25px 2px rgba(100, 103, 121, 0.336);
+    }
+    .plane-icon {
+        transform: rotate(-90deg);
+    }
+}
+.advantages-border {
+    width: 100px;
+    padding: 1px;
+}
+.advantages-text {
+    color: rgb(128, 126, 126);
+}
+// our advantages section style end

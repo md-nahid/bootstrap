@@ -1,28 +1,77 @@
 
 // home page banner section
-.banner {
-    background-image: url(../images/ballon.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .banner-hero-text {
-        h3 {
-            font-style: italic;
+.carousel-image-height {
+    width: 100%;
+    height: 580px;
+
+}
+.home-carousel-indecatiors {
+    left: 0;
+    margin-left: 0;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    flex-direction: column;
+    transform: translateY(-50%);
+    li {
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(0, 0, 0);
+        &:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    .active {
+        background-color: rgb(255, 255, 255);
+    }
+}
+.carousel-item-container {
+    div {
+        top: 20%;
+        text-align: left;
+        h2 {
+            font-size: 100px;
+            font-weight: bold;
         }
     }
 }
-    
-@media screen and (max-width: 768px) {
-    .banner {
-        height: 80vh;
+// home page banner section
+
+// last minutes tour card style start
+.last-minutes-tour-card {
+    &:hover {
+        .last-minutes-offer-details {
+            transform: translateY(0);
+        }
+    }
+    .offer-button {
+        top: 0;
+        right: 0;
+    }
+    .last-minutes-offer-details {
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        bottom: 0;
+        transform: translateY(80px);
+        transition: transform 0.3s ease;
     }
 }
-// home page banner section
+@media screen and (max-width: 576px) {
+    .last-minutes-tour-card {
+        .last-minutes-offer-details {
+            transform: translateY(0);
+            transition: 0;
+        }
+    }
+}
+// last minutes tour card style end
+
 
 
 // home page upcoming events section
@@ -49,7 +98,6 @@
         }
     }
 }
-
 @media screen and (max-width: 768px) {
     .upcomingevents {
         .container {
@@ -62,59 +110,6 @@
     }
 }
 // home page upcoming events section
-
-
-// explore the world section
-.exploretheworld {
-    background-image: url(../images/mountainriver.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    margin-top: 70px;
-    .container {
-        height: inherit;
-        display: flex;
-        align-items: center;
-        div {
-            .underlinetext {
-                font-size: 80px;
-                &::after {
-                    left: 0%;
-                    transform: translateX(0%);
-                }
-            }
-            p {
-                font-size: 18px;
-            }
-            .text-white {
-                font-size: 14px;
-                letter-spacing: 1px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .exploretheworld {
-        height: 70vh;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .exploretheworld {
-        .container {
-            div {
-                .underlinetext {
-                    font-size: 40px;
-                }
-            }
-        }
-    }
-}
-// explore the world section
-
 
 
 // tours section

@@ -1,7 +1,6 @@
 
 
 // aboutpage working process mouseover effect
-
 let workingProcessHover = document.querySelectorAll(".working-porcess");
 workingProcessHover.forEach( (item) => {
     item.addEventListener("mouseover", () => {
@@ -9,10 +8,7 @@ workingProcessHover.forEach( (item) => {
     });
 })
 
-
-
 // aboutpage working process mouseout effect
-
 let workingProcessBlur = document.querySelectorAll(".working-porcess");
 workingProcessBlur.forEach( (item) => {
     item.addEventListener("mouseout", () => {
